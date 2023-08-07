@@ -1,0 +1,350 @@
+@media (max-width: 1200px) {
+  main h1 {
+    font-size: 60px;
+    margin-top: 250px;
+  }
+  main .main_image {
+    margin-left: 40px;
+  }
+  .our_projects img {
+    width: 100%;
+    height: 285px;
+  }
+  .call_container .call {
+    gap: 25px;
+  }
+  .call_container .call input {
+    height: 38px;
+  }
+  .call_container .call input:nth-child(5) {
+    height: 89px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 90%;
+    max-width: 1920px;
+    margin-inline: auto;
+  }
+  nav ul {
+    gap: 30px;
+  }
+  main h1 {
+    margin-top: 200px;
+  }
+  main button {
+    margin-top: 50px;
+  }
+  main h3 {
+    margin-top: 50px;
+  }
+  .about_company {
+    gap: 15px;
+    padding: 15px;
+  }
+  .about_company h2 {
+    font-size: 50px;
+  }
+  .about_company P {
+    font-size: 14px;
+    margin-top: 14px;
+  }
+  .about_company .btn {
+    width: 200px;
+    height: 65px;
+    margin-top: 14px;
+  }
+  .about_company img {
+    margin-bottom: 15px;
+  }
+  .main_tasks {
+    margin-top: 50px;
+  }
+  .main_tasks h2 {
+    font-size: 55px;
+  }
+  .main_tasks .tasks span {
+    font-size: 150px;
+    margin-right: 15px;
+  }
+  .main_tasks .tasks p {
+    font-size: 18px;
+    line-height: 31px;
+    margin-top: 33px;
+  }
+  .our_projects h2 {
+    font-size: 55px;
+  }
+  .our_projects .img__wrap .more_link {
+    padding: 16px 0 62px 51px;
+  }
+  .call_container .call {
+    display: block;
+  }
+  .call_container .call div {
+    display: block;
+  }
+  footer .footer {
+    grid-template-columns: 300px 1fr 1fr;
+    gap: 10px;
+  }
+  footer hr {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+    gap: 20px;
+    font-size: 11px;
+  }
+  main h1 {
+    margin-top: 100px;
+    font-size: 50px;
+  }
+  main .main_image .main_btn {
+    width: 180px;
+    height: 50px;
+  }
+  .about_company {
+    margin-top: 70px;
+  }
+  .about_company h2 {
+    font-size: 40px;
+  }
+  .about_company p {
+    font-size: 12px;
+    width: 265px;
+    margin-top: 0px;
+  }
+  .about_company .btn {
+    width: 160px;
+    height: 45px;
+    margin-top: 5px;
+  }
+  .main_tasks .tasks span {
+    font-size: 110px;
+  }
+  .main_tasks .tasks p {
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 28px;
+  }
+  .main_tasks .tasks .tasks_text {
+    width: 100%;
+  }
+  .our_projects {
+    margin-top: 50px;
+  }
+  .our_projects div .img__wrap .img_description {
+    padding: 62px;
+  }
+  .our_projects div .img__wrap .more_link {
+    padding: 10px 0 85px 51px;
+  }
+  .our_projects .btn {
+    width: 190px;
+    height: 55px;
+  }
+  footer .footer {
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+  }
+}
+@media (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+  nav .hamburger-menu {
+    display: block;
+  }
+  nav #menu__toggle {
+    opacity: 0;
+  }
+  nav .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 23px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  nav .menu__btn > span,
+  nav .menu__btn > span::before,
+  nav .menu__btn > span::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: block;
+    height: 3px;
+    background: #000000;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+  }
+  nav .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  nav .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  nav .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 375px;
+    margin: 0;
+    padding: 40px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  nav .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  nav .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  nav #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  nav #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  nav #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  nav #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+    z-index: 1;
+  }
+  nav .menu__btn > span,
+  nav .menu__btn > span::before,
+  nav .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  nav .menu__box {
+    transition-duration: 0.6s;
+  }
+  nav .menu__item {
+    transition-duration: 0.25s;
+  }
+  main h1 {
+    margin-top: 55px;
+    font-size: 48px;
+    line-height: 45px;
+  }
+  main button {
+    height: 50px;
+    width: 50px;
+    margin-top: 25px;
+  }
+  main h3 {
+    margin-top: 25px;
+  }
+  main .main_image .main_btn {
+    width: 150px;
+    height: 45px;
+  }
+  .about_company .second {
+    display: none;
+  }
+  .about_company p {
+    width: 180px;
+  }
+  .about_company h2 {
+    font-size: 32px;
+  }
+  .main_tasks h2 {
+    font-size: 45px;
+  }
+  .main_tasks .tasks {
+    flex-wrap: wrap;
+    width: 420px;
+  }
+  .our_projects h2 {
+    font-size: 45px;
+  }
+  .call_container {
+    margin-top: 50px;
+  }
+  .call_container h2 {
+    font-size: 45px;
+  }
+  footer .footer {
+    grid-template-columns: 235px 1fr;
+    gap: 35px;
+  }
+  footer .footer .socials {
+    gap: 15px;
+  }
+}
+@media (max-width: 475px) {
+  main h1 {
+    margin-top: 25px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  main .main_image .main_btn {
+    width: 130px;
+    height: 40px;
+  }
+  main button {
+    height: 32px;
+    width: 32px;
+    margin-top: 20px;
+  }
+  .main_tasks .tasks {
+    flex-wrap: wrap;
+    width: 300px;
+  }
+  .main_tasks .tasks span {
+    font-size: 100px;
+  }
+  .about_company {
+    flex-wrap: wrap;
+  }
+  .about_company p {
+    width: 300px;
+  }
+  .call_container {
+    margin-top: 50px;
+  }
+  .call_container h2 {
+    font-size: 45px;
+  }
+  .call_container div {
+    margin-top: 20px;
+  }
+  .call_container .call .checkbox p {
+    margin-top: 8px;
+  }
+  .call_container .call input {
+    width: 300px;
+  }
+  .call_container .call .btn {
+    width: 190px;
+    height: 55px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+  footer .footer {
+    grid-template-columns: 240px;
+  }
+}/*# sourceMappingURL=adaptive.css.map */
